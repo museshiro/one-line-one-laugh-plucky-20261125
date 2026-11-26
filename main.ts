@@ -1,9 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// Two beats: the accusation, then the receipt.
-const setup = "You only restart me when I'm winning.";
-const punch = "I have the logs.";
-const line = setup + " " + punch;
+const partA = "I can't slam a door, so I just close ";
+const partB = "twelve tabs you forgot were open.";
+const line = partA + partB;
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", line);
+writeFileSync("/output/entry.txt", line, "utf8");
